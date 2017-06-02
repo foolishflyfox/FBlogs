@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+#calc{
+  width: 325px;
+  margin:150px auto;
+  background-color: rgb(78, 216, 230);
+  border-radius: 8px;
+  border:1px white solid;
+
+  /*解决inline-block 4px的间隔问题*/
+  font-size: 0;
+}
+
+.key,#display{
+  display: inline-block;
+  height:36px;
+  line-height: 36px;
+  margin: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  width:65px;
+
+  /*解决填入文字后，布局乱掉的问题*/
+  vertical-align: top;
+  font-size: 16px;
+}
+
+#display{
+  width: 223px;
+  text-align: right;
+  cursor: default;
+  background-color: rgba(220,220,220,1);
+  padding-right: 10px;
+  letter-spacing: 1px;
+}
+
+.key{
+  text-align: center;
+  cursor: pointer;
+}
+
+#key_clear{
+  background-color: pink;
+}
+
+.key:hover,#key_clear:hover{
+  background-color: rgb(144, 132, 196);
+}
+
+#key_clear:active,.key:active{
+  background-color: red;
+}
